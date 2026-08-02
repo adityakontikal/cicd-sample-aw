@@ -1,0 +1,14 @@
+template: docker-kaniko-build
+build:
+  dockerfile: Dockerfile
+  context: .
+scans:
+  trivy: false
+envs:
+  ist:
+    autoDeploy: true
+  prod:
+    autoDeploy: false
+promotionPolicy:
+  mustHaveScanRun: false
+  minIstSoakMinutes: 0
