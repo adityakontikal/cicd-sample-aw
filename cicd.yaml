@@ -10,6 +10,7 @@ envs:
     ingress: true
   prod:
     autoDeploy: false
+    ingress: true
 promotionPolicy:
   mustHaveScanRun: false
   minIstSoakMinutes: 0
