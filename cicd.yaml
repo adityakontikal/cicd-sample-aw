@@ -7,7 +7,7 @@ scans:
 envs:
   ist:
     autoDeploy: true
-    ingress: false
+    ingress: true
   prod:
     autoDeploy: false
     ingress: true
